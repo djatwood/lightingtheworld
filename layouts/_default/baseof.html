@@ -18,11 +18,11 @@
 
 <body class="bg-gray-50">
     {{ partial "header.html" . }}
+    {{ block "main" . }}
     <main>
         <h1>{{ .Title }}</h1>
-        {{ block "main" . }}
-        {{ end }}
     </main>
+    {{ end }}
 </body>
 
 </html>
