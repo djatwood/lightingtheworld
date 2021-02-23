@@ -16,7 +16,8 @@
     {{ end }}
 </head>
 
-<body class="p-4 bg-gray-50">
+<body class="bg-gray-50">
+    {{ partial "header.html" . }}
     <main>
         <h1>{{ .Title }}</h1>
         {{ block "main" . }}
