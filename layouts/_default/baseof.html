@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-gray-50">
-    {{ partial "header.html" . }}
+    {{ partialCached "site-header.html" . }}
     {{ block "main" . }}
     <main>
         <h1>{{ .Title }}</h1>
