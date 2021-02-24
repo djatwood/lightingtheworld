@@ -6,11 +6,11 @@
     @apply max-w-7xl w-full mx-auto;
 }
 
-#page h2 {
+#page main h2 {
     @apply mt-6 mb-4 text-dark text-4xl font-bold uppercase;
 }
 
-#page h2:first-child {
+#page main h2:first-child {
     @apply mt-0;
 }
 
@@ -20,4 +20,8 @@
 
 #toc li {
     @apply mb-4;
+}
+
+.button {
+    @apply px-6 py-2 border-2 rounded font-bold uppercase;
 }
