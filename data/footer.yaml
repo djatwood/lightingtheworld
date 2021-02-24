@@ -1,0 +1,39 @@
+social:
+  - name: facebook
+    url:
+  - name: twiter
+    url:
+  - name: instagram
+    url:
+
+menu:
+  - label: Individual Training
+    items:
+      - label: Overview
+        url:
+      - label: Courses
+        url:
+      - label: On-Site Training
+        url:
+  - label: Church Training
+    items:
+      - label: Overview
+        url:
+      - label: Courses
+        url:
+  - label : About Us
+    items: 
+    - label: Who We Are
+      url:
+    - label: Our Work
+      url:
+    - label: Board / Staff
+      url:
+  - label: Pricing
+    url:
+  - label: Store
+    url:
+  - label: News
+    url:
+  - label: Donate
+    url:

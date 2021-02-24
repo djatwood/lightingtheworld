@@ -1,0 +1,30 @@
+<footer class="py-20 bg-gradient-to-b from-primary to-primary-dark text-light">
+    <div class="flex flex-nowrap justify-between content-width">
+        <div class="max-w-sm">
+            <div class="mb-6">
+                {{ range .Site.Data.footer.social }}
+                {{ .name }}
+                {{ end }}
+            </div>
+            <h2 class="mb-6 text-4xl text-white font-bold uppercase">Lay Institute for Global Health Training</h2>
+
+            <div class="text-xl leading-loose">
+                <p>435 Lifestyle Lane</p>
+                <p>Wildwood, Georgia 30757</p>
+                <p>1 (706) 820-9804</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-8">
+            {{ range .Site.Data.footer.menu }}
+            <div>
+                <p class="mb-2 text-xl">{{ .label }}</p>
+                <ul>
+                    {{ range .items }}
+                    <li class="mb-1">{{ .label }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</footer>
