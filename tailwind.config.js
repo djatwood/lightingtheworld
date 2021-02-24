@@ -12,6 +12,7 @@ module.exports = {
             ...theme('colors'),
             'primary': '#0e4158',
             'primary-dark': '#0d3345',
+            'page-header': '#9f3d68',
         })
     }
 }

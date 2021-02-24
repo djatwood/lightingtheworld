@@ -1,3 +1,6 @@
-<main>
+{{ define "main" }}
+{{ partial "page-header" . }}
+<main class="content-width">
     {{ .Content }}
 </main>
+{{ end }}
