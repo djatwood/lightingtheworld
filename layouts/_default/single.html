@@ -1,6 +1,11 @@
 {{ define "main" }}
 {{ partial "page-header" . }}
-<main class="content-width">
-    {{ .Content }}
-</main>
+<div class="content-width py-20 flex flex-row flex-nowrap">
+    <aside id="toc" class="px-10 text-2xl text-light font-bold uppercase">
+        {{ .TableOfContents }}
+    </aside>
+    <main class="px-10 text-lg text-body leading-relaxed">
+        <div class="max-w-2xl">{{ .Content }}</div>
+    </main>
+</div>
 {{ end }}

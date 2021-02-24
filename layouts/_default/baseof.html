@@ -16,7 +16,7 @@
     {{ end }}
 </head>
 
-<body class="bg-gray-50">
+<body id="{{ .Kind }}" class="bg-gray-50">
     {{ partialCached "site-header.html" . }}
     {{ block "main" . }}
     <main>

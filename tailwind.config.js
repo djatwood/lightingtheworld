@@ -7,6 +7,8 @@ module.exports = {
         textColor: theme => ({
             ...theme('colors'),
             'light': '#bac8d8',
+            'dark': '#0e3d45',
+            'body': '#244950',
         }),
         backgroundColor: theme => ({
             ...theme('colors'),
