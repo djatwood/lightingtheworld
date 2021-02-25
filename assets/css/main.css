@@ -23,5 +23,5 @@
 }
 
 .button {
-    @apply px-6 py-2 border-2 rounded font-bold uppercase;
+    @apply inline-block px-6 py-2 border-2 rounded font-bold uppercase;
 }
