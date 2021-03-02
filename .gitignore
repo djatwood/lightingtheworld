@@ -1,5 +1,7 @@
+.vercel
+.env
+
 node_modules/
 resources/_gen/assets
 
 public/
-.vercel
