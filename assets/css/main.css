@@ -39,5 +39,5 @@ body {
 }
 
 #toc li {
-    @apply mb-4 font-display font-bold uppercase;
+    @apply mb-4 font-display font-extrabold uppercase;
 }
