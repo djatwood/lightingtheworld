@@ -5,14 +5,17 @@ module.exports = {
     },
     theme: {
         fontFamily: {
-          'display': ['Work Sans', 'sans-serif'],  
-          'body': ['Open Sans', 'sans-serif'],  
+            'display': ['Work Sans', 'sans-serif'],
+            'body': ['Open Sans', 'sans-serif'],
         },
         textColor: theme => ({
             ...theme('colors'),
-            'light': '#bac8d8',
-            'dark': '#0e3d45',
-            'body': '#244950',
+            'light': '#FFF7E3',
+            'heading': '#0E3D45',
+            'body': '#0E373E',
+            'accent': '#A6406C',
+            'accent-light': '#BAC8D8',
+            'footer': '#2B8DA5',
         }),
         backgroundColor: theme => ({
             ...theme('colors'),
@@ -32,8 +35,12 @@ module.exports = {
             maxWidth: {
                 '1/2': '50%',
             },
+            borderWidth: {
+                '3': '3px'
+            },
             borderColor: {
-                'body': '#244950',
+                'button': '#A6406C',
+                'button-light': '#FFF7E3',
             }
         }
     }

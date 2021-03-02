@@ -2,12 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply text-body font-light font-body;
+}
+
 .content-width {
     @apply max-w-7xl w-full mx-auto;
 }
 
+.heading {
+    @apply text-heading font-display font-extrabold uppercase;
+}
+
+.heading-light {
+    @apply text-white font-display font-extrabold uppercase;
+}
+
+.button {
+    @apply inline-block px-6 py-2.5 border-3 border-button rounded-lg text-accent font-display font-bold tracking-wide uppercase;
+}
+
+.button-light {
+    @apply inline-block px-6 py-2.5 border-3 border-button-light rounded-lg text-white font-display font-bold tracking-wide uppercase;
+}
+
 #page main h2 {
-    @apply mt-6 mb-4 text-dark text-4xl font-bold uppercase;
+    @apply heading mt-6 mb-4 text-4xl;
 }
 
 #page main h2:first-child {
@@ -19,9 +39,5 @@
 }
 
 #toc li {
-    @apply mb-4;
-}
-
-.button {
-    @apply inline-block px-6 py-2 border-2 rounded font-bold uppercase;
+    @apply mb-4 font-display font-bold uppercase;
 }
