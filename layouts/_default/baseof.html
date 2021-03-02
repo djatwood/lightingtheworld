@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title>
 
-    {{ $css := resources.Get "css/main.css" | postCSS }}
+    {{ $scratch := newScratch }}
+    {{ range (readDir "./assets/css/" ) }}
+    {{ $sheet := resources.Get (printf "css/%s" .Name) }}
+    {{ $scratch.Add "css" (slice $sheet) }}
+    {{ end }}
+
+    {{ $css := $scratch.Get "css" | resources.Concat "css/bundle.css" | postCSS }}
     {{ if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
     {{ else }}

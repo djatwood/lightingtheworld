@@ -25,19 +25,3 @@ body {
 .button-light {
     @apply inline-block px-6 py-2.5 border-3 border-button-light rounded-lg text-white font-display font-bold tracking-wide uppercase;
 }
-
-#page main h2 {
-    @apply heading mt-6 mb-4 text-4xl;
-}
-
-#page main h2:first-child {
-    @apply mt-0;
-}
-
-#page main p {
-    @apply mb-3;
-}
-
-#toc li {
-    @apply mb-4 font-display font-extrabold uppercase;
-}
