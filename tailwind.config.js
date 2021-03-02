@@ -4,6 +4,10 @@ module.exports = {
         content: ['./layouts/**/*.html'],
     },
     theme: {
+        fontFamily: {
+          'display': ['Work Sans', 'sans-serif'],  
+          'body': ['Open Sans', 'sans-serif'],  
+        },
         textColor: theme => ({
             ...theme('colors'),
             'light': '#bac8d8',
