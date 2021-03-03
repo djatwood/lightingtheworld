@@ -10,8 +10,11 @@
         {{ partial "affiliated" . }}
     </header>
 
-    <section class="py-32 bg-light">
-        <div class="content-width">
+    <section id="individual-training" class="py-32 bg-light">
+        <div class="content-width relative">
+            <div class="absolute right-0">
+                {{ partial "img-fit" (dict "src" "img/device-collage.png" "h" 400 "w" 600 ) }}
+            </div>
             <h3 class="mb-2 text-lg text-accent font-display uppercase">Individual Training</h3>
             <h2 class="heading max-w-xl mb-3 text-4xl">Receive Guided Health Training Online</h2>
             <p class="max-w-lg mb-6 text-xl leading-relaxed">Find answers to your questions about natural remedies, a
@@ -23,9 +26,12 @@
             <a href="#" class="button">Learn More</a>
         </div>
     </section>
-    <section class="py-32 bg-md">
-        <div class="content-width flex justify-end">
+    <section class="bg-md">
+        <div class="content-width relative flex justify-end overflow-hidden py-32">
             <!-- TABS -->
+            <div class="absolute left-0 bottom-0 transform translate-y-8">
+                {{ partial "img-fit" (dict "src" "img/home-remedies.png" "h" 600 "w" 550 "p" "bottom" ) }}
+            </div>
             <div class="max-w-sm">
                 <h3 class="mb-2 text-lg text-accent font-display uppercase">Training Option</h3>
                 <h2 class="heading max-w-sm mb-3 text-4xl">Herbal Remedies</h2>
@@ -37,7 +43,9 @@
         </div>
     </section>
     <section>
-        <div class="h-96 bg-gray-400"></div>
+        <div class="h-96 bg-gray-400">
+            {{ partial "img-fill" (dict "src" "img/group-8.png" "h" 400 "w" 2000) }}
+        </div>
     </section>
     <section class="content-width py-24 text-center">
         <h3 class="mb-2 text-lg text-accent font-display uppercase">Church Training</h3>
@@ -62,12 +70,20 @@
                 {{ partial "affiliated" . }}
             </div>
             <div class="max-w-screen-lg mx-auto flex justify-around items-start">
+                {{ $star := resources.Get "img/star.svg" }}
+                {{ $star := $star.Content | safeHTML }}
                 {{ range .Site.Data.testimonies }}
                 <div class="w-full p-8 rounded m-4 bg-white">
-                    <div>{{ .rating }}</div>
-                    <p>{{ .review }}</p>
-                    <div class="flex mt-4">
-                        <div class="w-12 h-12 flex-shrink-0 mr-4 bg-gray-200"></div>
+                    <div class="flex mb-3">
+                        {{ range seq .rating }}
+                        <div class="w-5 mr-2 text-footer">
+                            {{ $star }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    <p class="mb-6">{{ .review }}</p>
+                    <div class="flex">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full mr-4 bg-gray-200"></div>
                         <div>
                             <p class="heading">{{ .name }}</p>
                             <p class="text-sm">{{ replace .position "\n" "<br>" | safeHTML }}</p>

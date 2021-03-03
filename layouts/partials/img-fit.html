@@ -1,0 +1,11 @@
+<picture class="block w-full h-full">
+    {{ $img := resources.Get .src }}
+    {{ $1x := $img }}
+    {{ $2x := $img }}
+    {{ if and .w .h }}
+    {{ $1x = $img.Fit (printf "%dx%d" .w .h) }}
+    {{ $2x = $img.Fit (printf "%dx%d %s" (mul .w 2) (mul .h 2) .p) }}
+    {{ end }}
+    <source srcset="{{ $1x.Permalink }} {{ $1x.Width }}w, {{ $2x.Permalink }} 2x">
+    <img class="w-full h-full object-contain" src="{{ $1x.Permalink }}" alt="{{ .alt }}">
+</picture>

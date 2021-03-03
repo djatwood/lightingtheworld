@@ -25,3 +25,7 @@ body {
 .button-light {
     @apply inline-block px-6 py-2.5 border-3 border-button-light rounded-lg text-white font-display font-bold tracking-wide uppercase;
 }
+
+svg {
+    @apply fill-current;
+}
