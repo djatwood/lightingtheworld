@@ -10,9 +10,12 @@
         {{ partial "affiliated" . }}
     </header>
 
-    <section id="individual-training" class="py-32 bg-light">
-        <div class="content-width relative">
-            <div class="absolute right-0">
+    <section id="individual-training" class="bg-off-white overflow-hidden">
+        <div class="content-width relative py-32">
+            <div class="absolute top-0 right-0 w-80 h-5/6 rounded-3xl bg-light transform rotate-45 translate-x-10 -translate-y-20"></div>
+            <div class="absolute top-0 right-0 w-32 h-full border-8 border-accent-dark rounded-3xl transform rotate-45 -translate-x-10 translate-y-10"></div>
+            <div class="absolute top-0 right-0 w-32 h-5/6 rounded-3xl bg-primary transform rotate-45 translate-x-40 translate-y-32"></div>
+            <div class="absolute mb-12 bottom-0 right-0">
                 {{ partial "img-fit" (dict "src" "img/device-collage.png" "h" 400 "w" 600 ) }}
             </div>
             <h3 class="mb-2 text-lg text-accent font-display uppercase">Individual Training</h3>

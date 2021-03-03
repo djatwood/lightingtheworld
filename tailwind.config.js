@@ -22,7 +22,8 @@ module.exports = {
             'primary': '#0e4158',
             'primary-dark': '#0d3345',
             'secondary': '#7d3654',
-            'light': '#f4f9ff',
+            'off-white': '#f4f9ff',
+            'light': '#FFF7E3',
             'md': '#dbe8eb',
             'page-header': '#9f3d68',
         }),
@@ -41,6 +42,7 @@ module.exports = {
             borderColor: {
                 'button': '#A6406C',
                 'button-light': '#FFF7E3',
+                'accent-dark': '#7a3814',
             }
         }
     }
