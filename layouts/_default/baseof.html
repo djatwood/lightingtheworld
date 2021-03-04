@@ -30,11 +30,15 @@
 <body id="{{ .Kind }}">
     {{ partialCached "site-header.html" . }}
     {{ block "main" . }}
-    <main>
-        <h1>{{ .Title }}</h1>
+    <main class="content-width py-32">
+        <h1 class="heading text-3xl">{{ .Title }}</h1>
     </main>
     {{ end }}
-    {{ partialCached "cta" . }}
+    {{ with .Params.cta }}{{ if .simple }}
+    {{ partial "cta-simple" . }}
+    {{ else }}
+    {{ partial "cta" . }}
+    {{ end }}{{ end }}
     {{ partialCached "site-footer" . }}
 </body>
 

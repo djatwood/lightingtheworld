@@ -1,0 +1,8 @@
+<div class="flex flex-col items-center py-20 bg-primary-dark text-center">
+    <h2 class="heading-light max-w-xs mb-8 text-5xl leading-tight">{{ .title }}</h2>
+    <div class="flex justify-center">
+        {{ range .Buttons }}
+        <a class="button mx-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
+        {{ end }}
+    </div>
+</div>
