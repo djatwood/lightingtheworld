@@ -22,6 +22,8 @@ module.exports = {
             'primary': '#0e4158',
             'primary-dark': '#0d3345',
             'secondary': '#7d3654',
+            'secondary-light': '#2B8DA5',
+            'secondary-dark': '#0C4E33',
             'off-white': '#f4f9ff',
             'light': '#FFF7E3',
             'md': '#dbe8eb',
@@ -36,6 +38,11 @@ module.exports = {
             maxWidth: {
                 '1/2': '50%',
             },
+            height: {
+                '5/4': '125%',
+                '3/2': '150%',
+                '2/1': '200%',
+            },
             borderWidth: {
                 '3': '3px'
             },
@@ -43,6 +50,13 @@ module.exports = {
                 'button': '#A6406C',
                 'button-light': '#FFF7E3',
                 'accent-dark': '#7a3814',
+            },
+            translate: {
+                '128': '32rem',
+                '-128': '-32rem',
+            },
+            rotate: {
+                '-60': '-60deg'
             }
         }
     }
