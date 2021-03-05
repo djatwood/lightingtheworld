@@ -1,0 +1,9 @@
+<div class="p-16 rounded mb-8 bg-white">
+    <div class="w-12 h-12 rounded mb-4 bg-gray-200"></div>
+    <h4 class="heading text-xl">Training Option</h4>
+    <h3 class="heading mb-4 text-3xl font-extrabold">{{ .title }}</h3>
+    <p class="mb-4 text-xl">{{ .description }}</p>
+    {{ range .buttons }}
+    <a href="{{ .link }}" class="button">{{ .label }}</a>
+    {{ end }}
+</div>

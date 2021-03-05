@@ -14,6 +14,38 @@ nav:
     icon: 
   - label: Home Remedies
     icon: 
+blocks:
+ - kind: options
+   align: right
+   image: 
+   title: Learn Just What You Want
+   subtitle: Training Options
+   description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac turpis egestas. 
+   options: 
+    - title: Herbal Remedies
+      description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, nunc et lorem.
+      icon: 
+      buttons:
+       - label: Learn More
+         link:  
+       - label: Pricing
+         link:  
+    - title: Home Remedies 
+      description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, nunc et lorem.
+      icon: 
+      buttons:
+       - label: Learn More
+         link:  
+       - label: Pricing
+         link:  
+    - title: Natural Remedies
+      description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas pede varius nisi, nunc et lorem.
+      icon: 
+      buttons:
+       - label: Learn More
+         link:  
+       - label: Pricing
+         link:  
 cta:
   title: Looking for hands-on experience?
   sub-title: On-site training options

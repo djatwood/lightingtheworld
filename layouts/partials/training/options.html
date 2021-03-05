@@ -1,0 +1,23 @@
+<section class="py-24 bg-gray-900">
+    <div class="content-width grid md:grid-cols-2 gap-8">
+        {{ $o := ""}}
+        {{ if eq .align "right" }}{{ $o = "order-1" }}{{ end }}
+        <div class="{{ $o }}">
+            <div class="p-16">
+                <h3 class="heading-light mb-2 text-xl">{{ .subtitle }}</h3>
+                <h2 class="heading-light mb-4 text-3xl font-extrabold">{{ .title }}</h2>
+                <p class="mb-4 text-xl text-white">{{ .description }}</p>
+            </div>
+            {{ range first (div (add 1 (len .options)) 2) .options }}
+            {{ partial "training/option" . }}
+            {{ end }}
+        </div>
+        <div>
+            <!-- img -->
+            <div class="h-160 rounded mb-8 bg-gray-50 bg-opacity-50"></div>
+            {{ range last (div (len .options) 2) .options }}
+            {{ partial "training/option" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>

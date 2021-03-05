@@ -36,6 +36,9 @@ module.exports = {
             'primary-dark': '#0d3345',
         }),
         extend: {
+            spacing: {
+                '160': '40rem',
+            },
             maxWidth: {
                 '1/2': '50%',
             },

@@ -1,3 +1,11 @@
 {{ define "main" }}
 {{ partial "training/header" . }}
+{{ range .Params.blocks }}
+
+{{ if eq .kind "options" }}
+{{ partial "training/options.html" . }}
+{{ end }}
+
+
+{{ end }}
 {{ end }}
