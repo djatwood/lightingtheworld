@@ -31,7 +31,7 @@
     {{ partialCached "site/header.html" . }}
     {{ block "main" . }}
     <main class="content-width py-32">
-        <h1 class="heading text-3xl">{{ .Title }}</h1>
+        <h1 class="heading text-3xl font-extrabold">{{ .Title }}</h1>
     </main>
     {{ end }}
     {{ with .Params.cta }}{{ if .simple }}

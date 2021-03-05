@@ -13,6 +13,7 @@ module.exports = {
             'light': '#FFF7E3',
             'heading': '#0E3D45',
             'body': '#0E373E',
+            'icon': '#0E4158',
             'accent': '#A6406C',
             'accent-light': '#BAC8D8',
             'footer': '#2B8DA5',

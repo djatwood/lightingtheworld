@@ -11,11 +11,11 @@ body {
 }
 
 .heading {
-    @apply text-heading font-display font-extrabold uppercase;
+    @apply text-heading font-display uppercase;
 }
 
 .heading-light {
-    @apply text-white font-display font-extrabold uppercase;
+    @apply text-white font-display uppercase;
 }
 
 .button {
