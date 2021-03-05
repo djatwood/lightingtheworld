@@ -28,7 +28,7 @@
 </head>
 
 <body id="{{ .Kind }}">
-    {{ partialCached "site-header.html" . }}
+    {{ partialCached "site/header.html" . }}
     {{ block "main" . }}
     <main class="content-width py-32">
         <h1 class="heading text-3xl">{{ .Title }}</h1>
@@ -39,7 +39,7 @@
     {{ else }}
     {{ partial "cta" . }}
     {{ end }}{{ end }}
-    {{ partialCached "site-footer" . }}
+    {{ partialCached "site/footer" . }}
 </body>
 
 </html>

@@ -7,7 +7,7 @@
                 your health and speak to the lifestyle needs of your community with confidence.</p>
             <button class="button">Start Training</button>
         </div>
-        {{ partial "affiliated" . }}
+        {{ partialCached "site/affiliated" . }}
     </header>
 
     <section id="individual-training" class="bg-off-white overflow-hidden">
@@ -76,7 +76,7 @@
                     up-to-date information assembled by a research of experienced medical professionals, health
                     educators and pastors.</p>
 
-                {{ partial "affiliated" . }}
+                {{ partialCached "site/affiliated" . }}
             </div>
             <div class="max-w-screen-lg mx-auto flex justify-around items-start">
                 {{ $star := resources.Get "img/star.svg" }}
