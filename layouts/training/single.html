@@ -1,13 +1,12 @@
 {{ define "main" }}
 {{ partial "training/header" . }}
+
 {{ range .Params.blocks }}
-
-{{ if eq .kind "options" }}
-{{ partial "training/options.html" . }}
-{{ else if eq .kind "cta" }}
-{{ partial "cta" . }}
+{{ if fileExists (printf "layouts/partials/%s.html" .kind) }}
+{{ partial .kind . }}
+{{ else }}
+{{ errorf `"%s": partial %s does not exist` $.File.Path .kind }}
+{{ end }}
 {{ end }}
 
-
-{{ end }}
 {{ end }}

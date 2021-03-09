@@ -15,7 +15,7 @@ nav:
   - label: Home Remedies
     icon: 
 blocks:
- - kind: options
+ - kind: training/options
    align: right
    image: 
    title: Learn Just What You Want

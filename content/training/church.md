@@ -9,7 +9,7 @@ nav:
   - label: Weekend Training
   - label: Ten Day Training
 blocks:
- - kind: options
+ - kind: training/options
    image: 
    title: Get your church or organization UP to speed 
    subtitle: Weekend Training 
