@@ -31,7 +31,7 @@
                 {{ end }}
             </div>
             <div class="flex -m-3">
-                {{ range $index, $button := .Buttons }}
+                {{ range $index, $button := .buttons }}
                 <a class="button m-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
                 {{ end }}
             </div>
