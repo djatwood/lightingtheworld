@@ -21,6 +21,8 @@ blocks:
    title: Learn Just What You Want
    subtitle: Training Options
    description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac turpis egestas. 
+   bgstart: "#46bb8b"
+   bgend: "#15774f"
    options: 
     - title: Herbal Remedies
       description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, nunc et lorem.

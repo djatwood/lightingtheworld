@@ -1,4 +1,9 @@
-<section class="py-24 bg-gray-900">
+{{ $scratch := newScratch }}
+{{ if and .bgstart .bgend }}
+{{ $scratch.Set "bg" (printf `style="background-image: linear-gradient(to right bottom, %s, %s);"` .bgstart .bgend) }}
+{{ end -}}
+
+<section class="py-24 bg-gray-900" {{ $scratch.Get "bg" | safeHTMLAttr }}>
     <div class="content-width grid md:grid-cols-2 gap-8">
         {{ $o := ""}}
         {{ if eq .align "right" }}{{ $o = "order-1" }}{{ end }}

@@ -14,6 +14,8 @@ blocks:
    title: Get your church or organization UP to speed 
    subtitle: Weekend Training 
    description: Learn how to prevent disease through lifestyle intervention. Learn how to cook simple, healthy and delicious vegetarian recipes. 
+   bgstart: "#85c7df"
+   bgend: "#2b8da5"
    options: 
     - title: Health & Wellness
       description: Learn how to prevent disease through lifestyle intervention. Learn how to cook simple, healthy and delicious vegetarian recipes.
