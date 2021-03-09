@@ -15,6 +15,20 @@ nav:
   - label: Home Remedies
     icon: 
 blocks:
+ - kind: cta
+   title:  Level up to leadership 
+   subtitle: Health & Wellness Instructor 
+   description: This certificate program gives you a broad-based foundational knowledge of practical herbal applications for both personal and family purposes.
+   background:
+     color: "#f2dbb4"
+     image: img/hydro-bg.png
+     blend: overlay
+   buttons:
+   - label: Learn More
+     link: \#
+   - label: Pricing
+     link: \#
+     class: button-light text-white
  - kind: training/options
    align: right
    image: 

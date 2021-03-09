@@ -1,4 +1,6 @@
-<div class="bg-primary-dark">
+{{ $scratch := newScratch }}
+{{ with .background.color }}{{$scratch.Set "bg" (printf `style="background-color:%s"` .) }}{{ end }}
+<section class="bg-primary-dark" {{ $scratch.Get "bg" | safeHTMLAttr }}>
     <div class="content-width relative py-20">
         {{ with .background }}
         <div class="absolute top-0 right-0 flex justify-end w-full h-full"
@@ -37,4 +39,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
