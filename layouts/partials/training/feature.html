@@ -1,0 +1,26 @@
+<section class="py-32">
+    <div class="content-width">
+        <div class="max-w-xl mb-6">
+            {{ with .subtitle }}
+            <h3 class="mb-2 text-lg text-accent font-display uppercase">{{ . }}</h3>
+            {{ end }}
+            <h2 class="heading mb-6 text-4xl font-bold">{{ .title }}</h2>
+            <p class="mb-4 text-xl">{{ .description }}</p>
+
+            <div class="flex -mx-3">
+                {{ range .buttons }}
+                <a class="button m-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="grid grid-cols-{{ len .icons }} gap-8">
+            {{ range .icons }}
+            <div>
+                <div class="w-16 h-16 rounded mb-2 bg-gray-200"></div>
+                <p class="text-lg">{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
