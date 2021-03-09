@@ -4,7 +4,7 @@ date: 2021-02-22T20:12:41-05:00
 draft: false
 cta:
   simple: true
-  title: Start Your Training
+  title: Start Your \n Training
   buttons:
   - label: Sign Up
     link: /sign-up

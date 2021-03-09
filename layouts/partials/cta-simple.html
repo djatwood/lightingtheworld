@@ -1,5 +1,9 @@
-<div class="flex flex-col items-center py-20 bg-primary-dark text-center">
-    <h2 class="heading-light max-w-xs mb-8 text-5xl font-extrabold leading-tight">{{ .title }}</h2>
+{{ $scratch := newScratch }}
+{{ with .bg }}{{$scratch.Set "bg" (printf `style="background-color:%s"` .) }}{{ end }}
+<div class="flex flex-col items-center py-20 bg-primary-dark text-center" {{ $scratch.Get "bg" | safeHTMLAttr}}>
+    <h2 class="content-width heading-light mb-8 text-5xl font-extrabold leading-tight">
+        {{ replace .title "\\n" "<br>" | safeHTML }}
+    </h2>
     <div class="flex justify-center">
         {{ range .Buttons }}
         <a class="button mx-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>

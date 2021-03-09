@@ -38,28 +38,37 @@ blocks:
       icon: 
       buttons:
        - label: Learn More
-         link:  
+         link: 
        - label: Pricing
          link: 
+
+ - kind: cta
+   title: Thoroughly Equip your Congregation for service
+   subtitle: Ten-Day Training certification
+   description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac nunc et lorem turpis egestas. 
+   background:
+     image: img/hydro-bg.png
+     blend: overlay
+   icons:
+   - label: Principles of health
+     icon: 
+   - label: Natural remedies
+     icon: 
+   - label: Vegetarian Cooking
+     icon: 
+   - label: Community Outreach
+     icon: 
+   buttons:
+   - label: Learn More
+     link: \#
+   - label: Sign Up
+     link: \#
+     class: button-light text-white
 cta: 
-  title: Thoroughly Equip your Congregation for service
-  sub-title: Ten-Day Training certification
-  description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac nunc et lorem turpis egestas. 
-  background:
-    image: img/hydro-bg.png
-    blend: overlay
-  icons:
-  - label: Principles of health
-    icon: 
-  - label: Natural remedies
-    icon: 
-  - label: Vegetarian Cooking
-    icon: 
-  - label: Community Outreach
-    icon: 
+  simple: true
+  title: Get training for your Church\nOr organization today!
+  bg: "#0c4e33"
   buttons:
-  - label: Learn More
-    link: \#
   - label: Sign Up
     link: \#
     class: button-light text-white

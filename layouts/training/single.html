@@ -4,6 +4,8 @@
 
 {{ if eq .kind "options" }}
 {{ partial "training/options.html" . }}
+{{ else if eq .kind "cta" }}
+{{ partial "cta" . }}
 {{ end }}
 
 
