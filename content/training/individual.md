@@ -76,6 +76,19 @@ blocks:
          link:  
        - label: Pricing
          link:  
+ - kind: training/pricing
+   title: Pricing
+   items: 
+    - - title: Health & Wellness Coach (130 hrs) 
+        price: 497
+      - title: Health & Wellness Instructor (130 hrs)
+        price: 1,497
+    - - title: Natural Remedies (10 hrs)
+        price: 197
+      - title: HOme Remedies (10 hrs) 
+        price: 97
+      - title: Herbal Remedies (10 hrs)
+        price: 497
 cta:
   title: Looking for hands-on experience?
   subtitle: On-site training options
