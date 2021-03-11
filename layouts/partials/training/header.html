@@ -1,11 +1,11 @@
 <header class="pt-20 pb-16">
     <div class="content-width">
         <div class="max-w-2xl">
-            <h2 class="heading mb-2 text-2xl text-accent">{{ .Title }}</h2>
-            <h1 class="heading mb-4 font-extrabold text-5xl">{{ .Params.heading }}</h1>
-            <p class="text-2xl">{{ .Summary }}</p>
+            <h2 class="heading mb-2 text-2xl text-accent">{{ .subtitle }}</h2>
+            <h1 class="heading mb-4 font-extrabold text-5xl">{{ .title }}</h1>
+            <p class="text-2xl">{{ .summary }}</p>
 
-            {{ with .Params.nav }}
+            {{ with .nav }}
             <div class="grid sm:grid-cols-2 gap-4 mt-10">
                 {{ range . }}
                 <a class="heading flex max-w-min text-xl font-bold" href="{{ .link }}">

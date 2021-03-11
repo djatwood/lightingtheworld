@@ -3,12 +3,14 @@ title: "Church Training"
 date: 2021-03-03T22:03:19-05:00
 draft: false
 url: /church-training
-heading: Transform your church Into a beacon of Health For Your Community
-summary: Invite a team of LIGHT teachers to visit your church for a health emphasis weekend or a one-week intensive health evangelism training.
-nav:
-  - label: Weekend Training
-  - label: Ten Day Training
 blocks:
+ - kind: training/header
+   title: Transform your church Into a beacon of Health For Your Community
+   subtitle: Church Training
+   summary: Invite a team of LIGHT teachers to visit your church for a health emphasis weekend or a one-week intensive health evangelism training.
+   nav:
+    - label: Weekend Training
+    - label: Ten Day Training
  - kind: training/options
    image: 
    title: Get your church or organization UP to speed 
