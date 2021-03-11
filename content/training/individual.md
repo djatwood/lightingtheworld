@@ -89,13 +89,5 @@ blocks:
         price: 97
       - title: Herbal Remedies (10 hrs)
         price: 497
-cta:
-  title: Looking for hands-on experience?
-  subtitle: On-site training options
-  description: Travel to one of our affiliate LIGHT schools located around the world for an in-person and hands-on experience to receive your certification.
-  background: 
-    image: img/earth-bg.png
-  buttons: 
-    - label: Learn More
-      link: \#
+cta: hands on training
 ---

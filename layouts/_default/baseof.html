@@ -29,16 +29,21 @@
 
 <body id="{{ .Kind }}">
     {{ partialCached "site/header.html" . }}
+    
     {{ block "main" . }}
     <main class="content-width py-32">
         <h1 class="heading text-3xl font-extrabold">{{ .Title }}</h1>
     </main>
     {{ end }}
-    {{ with .Params.cta }}{{ if .simple }}
-    {{ partial "cta-simple" . }}
-    {{ else }}
+
+    {{ if reflect.IsMap .Params.cta }}
+    {{ partial "cta" .Params.cta }}
+    {{ else if .Params.cta }}
+    {{ with index .Site.Data.cta .Params.cta }}
     {{ partial "cta" . }}
-    {{ end }}{{ end }}
+    {{ end }}
+    {{ end }}
+
     {{ partialCached "site/footer" . }}
 </body>
 

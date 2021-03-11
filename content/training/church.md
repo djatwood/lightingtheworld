@@ -67,7 +67,8 @@ blocks:
 cta: 
   simple: true
   title: Get training for your Church\nOr organization today!
-  bg: "#0c4e33"
+  background: 
+   color: "#0c4e33"
   buttons:
   - label: Sign Up
     link: \#

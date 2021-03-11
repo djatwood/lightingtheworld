@@ -1,6 +1,19 @@
-{{ $scratch := newScratch }}
-{{ with .background.color }}{{$scratch.Set "bg" (printf `style="background-color:%s"` .) }}{{ end }}
-<section class="bg-primary-dark" {{ $scratch.Get "bg" | safeHTMLAttr }}>
+{{ $s := newScratch }}
+{{ with .background.color }}{{$s.Set "bg" (printf `style="background-color:%s"` .) }}{{ end }}
+
+{{ if .simple }}
+<section class="flex flex-col items-center py-20 bg-primary-dark text-center" {{ $s.Get "bg" | safeHTMLAttr}}>
+    <h2 class="content-width heading-light mb-8 text-5xl font-extrabold leading-tight">
+        {{ replace .title "\\n" "<br>" | safeHTML }}
+    </h2>
+    <div class="flex justify-center">
+        {{ range .Buttons }}
+        <a class="button mx-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
+        {{ end }}
+    </div>
+</section>
+{{ else }}
+<section class="bg-primary-dark" {{ $s.Get "bg" | safeHTMLAttr }}>
     <div class="content-width relative py-20">
         {{ with .background }}
         <div class="absolute top-0 right-0 flex justify-end w-full h-full"
@@ -16,7 +29,7 @@
                 {{ with .subtitle }}
                 <h3 class="mb-2 text-xl text-accent font-display uppercase">{{ . }}</h3>
                 {{ end }}
-                <h2 class="mb-6 text-4xl text-white font-display font-bold uppercase">{{ .title }}</h2>
+                <h2 class="mb-6 text-4xl text-white font-display font-bold uppercase">{{ $.title }}</h2>
                 {{ with .description }}
                 <p class="mb-8 text-xl text-white">{{ . }}</p>
                 {{ end }}
@@ -33,10 +46,11 @@
                 {{ end }}
             </div>
             <div class="flex -m-3">
-                {{ range $index, $button := .buttons }}
+                {{ range .buttons }}
                 <a class="button m-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
                 {{ end }}
             </div>
         </div>
     </div>
 </section>
+{{ end }}
